@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Todo</title>
+    <title>Document</title>
     <style type="text/tailwindcss">
         @layer utilities {
           .content-auto {
@@ -13,27 +12,20 @@
         }
       </style>
 </head>
-<body class="bg-violet-400">
-    <form class="w-[50%] mx-auto mt-[50px] p-5 bg-white rounded-[10px]">
-        <h2 class="text-[25px] font-semibold text-violet-600">Create your Todo</h2>
-        <div class="flex justify-between mt-[20px]">
-            <input class="w-[72%] p-[12px] outline-none border-[2px] border-violet-300 rounded-[12px] text-violet-400 focus:border-violet-500 focus:shadow-lg" type="text" placeholder="Enter name of your Todo....">
-            <button class="w-[26%] bg-violet-500 rounded-[12px] text-white font-semibold" type="submit">Enter</button>
+<body class="h-[100vh] flex items-center justify-center bg-violet-400">
+    <form class="bg-white p-5 rounded-lg" >
+        <h2 class="text-[25px] font-semibold text-violet-600">Create a new account for enter Todo</h2>
+        <div>
+            <p class="text-[18px] font-semibold text-violet-500">Enter your email-adress</p>
+            <input type="email" required placeholder="Email-adress" class="w-full mt-[10px] p-[8px] outline-none border-[2px] border-violet-300 rounded-[12px] text-violet-400 focus:border-violet-500 focus:shadow-lg">
+            <p class="text-[18px] font-semibold text-violet-500 mt-[10px]">Create your password</p>
+            <input type="password" required class="w-full mt-[10px] p-[8px] outline-none border-[2px] border-violet-300 rounded-[12px] text-violet-400 focus:border-violet-500 focus:shadow-lg" placeholder="Enter password">
+            <button type="button" class="btn w-full bg-violet-500 rounded-[12px] text-white font-semibold mt-[12px] p-3 focus:shadow-lg">Enter</button>
         </div>
     </form>
-    <div class="w-[50%] mx-auto mt-[20px] flex justify-between p-5 bg-white rounded-[10px]">
-        <button  class="w-[25%] p-[15px] bg-violet-500 rounded-[12px] text-white font-semibold" type="submit">All(<span id="all">0</span>)</button>
-        <button class="w-[25%] p-[15px] bg-violet-500 rounded-[12px] text-white font-semibold" type="submit">Complated(<span id="complated">0</span>)</button>
-        <button class="w-[25%] p-[15px] bg-violet-500 rounded-[12px] text-white font-semibold" type="submit">Uncomplated(<span id="uncomplated">0</span>)</button>
-    </div>
-    <ul class="list w-[50%] mx-auto mt-[10px] p-5 flex flex-col gap-3 bg-white rounded-[10px]">
-       
-    </ul>
 
 
-
-
-    <script src="./js/main.js"></script>
+    <script src="./js/app.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
